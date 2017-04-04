@@ -12,24 +12,52 @@
             padding-bottom: 40px;
             background-color: #eee;
         }
+        .pageContent {
+            max-width: 330px;
+        }
+        .removeMarginPaddingFromCol {
+            margin: 0;
+            padding: 0;
+        }
+        .stretchToFullWidth {
+            width: 100%;
+        }
+        #caseSelectionArea {
+            min-height: 60vh;
+            max-height: 60vh;
+            background-color: red;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container pageContent">
 
-        <img src="img/CaseFlowManagerLogo.png" class="img-responsive center-block">
+        <div class="pageContent">
 
-        <h2 class="text-center">Select Case</h2>
+            <img src="img/CaseFlowManagerLogo.png" class="img-responsive center-block">
 
-        <div class="container">
+            <h2 class="text-center">Select Case</h2>
+
+            <div class="row" id="searchSlashNewCaseRow">
+                <div class="col-xs-6 removeMarginPaddingFromCol">
+                    <form>
+                        <div class="form-group">
+                            <label for="caseSearch" class="sr-only">Case Search</label>
+                            <input class="form-control input-sm stretchToFullWidth" type="text" id="caseSearch" placeholder="(Search)">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-6 removeMarginPaddingFromCol">
+                    <button class="btn btn-sm btn-warning stretchToFullWidth" type="button">New Case</button>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-lg-6">
-                    <label for="caseSearch" class="sr-only">Case Search</label>
-                    <input type="text" id="caseSearch" placeholder="(Search)">
+                <div id="caseSelectionArea">
+
                 </div>
-                <div class="col-lg-6">
-                    <button class="btn btn-sm btn-warning" type="submit">New Case</button>
-                </div>
+            </div>
+            <div class="row">
+                <button class="btn btn-sm btn-warning stretchToFullWidth" type="button">Log Out</button>
             </div>
         </div>
     </div> <!-- container close -->
