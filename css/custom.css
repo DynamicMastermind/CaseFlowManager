@@ -6,3 +6,10 @@ body {
 .pageContent {
     max-width: 330px;
 }
+.stretchToFullWidth {
+    width: 100%;
+}
+.removeMarginPaddingFromCol {
+    margin: 0;
+    padding: 0;
+}
