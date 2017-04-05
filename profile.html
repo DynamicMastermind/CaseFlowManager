@@ -7,20 +7,30 @@
       <title>Profile</title> 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/custom.css">
+    <style>
+        .rowTest {
+            height: 100vh;
+            overflow: auto;
+        }
+        .contentTest {
+            overflow: auto;
+            height: 70vh;
+        }
+    </style>
 </head>
 <body> 
 <div class="container pageContent"> 
     <img src="img/CaseFlowManagerLogo.png" class="img-responsive center-block">
     <h2 class="text-center">Profile</h2>
-    <div class="row"> 
-        <div class="col-md-6"> 
+    <div class="row rowTest"> 
+        <div class="col-xs-6"> 
             <div class="row"> 
-                <div class="col-md-12">  <h3>  Photo  </h3> </div>
+                <div class="col-xs-12">  <h3>  Photo  </h3> </div>
                  
             </div>
              
             <div class="row"> 
-                <div class="col-md-12">  <h3>  Case Status  </h3> </div>
+                <div class="col-xs-12">  <h3>  Case Status  </h3> </div>
                  
             </div>
              
@@ -30,7 +40,7 @@
              
         </div>
          
-        <div class="col-md-6">  <h3 class="text-center">  Profile Data  </h3> 
+        <div class="col-xs-6 contentTest">  <h3 class="text-center">  Profile Data  </h3> 
             <p class="text-center">  Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam
                 eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien,
                 sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere
