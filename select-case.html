@@ -7,22 +7,6 @@
     <title>CaseFlow Manager</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/custom.css">
-    <style>
-        #caseSelectionArea {
-            min-height: 60vh;
-            max-height: 60vh;
-            background-color: white;
-            overflow: auto;
-        }
-        .form-control {
-            position: relative;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            padding: 10px;
-            font-size: 16px;
-        }
-    </style>
 </head>
 <body>
     <div class="container pageContent">
@@ -36,7 +20,7 @@
             <div class="col-xs-6 removeMarginPaddingFromCol">
                 <form>
                     <label for="caseSearch" class="sr-only">Case Search</label>
-                    <input class="input-sm stretchToFullWidth form-control" type="text" id="caseSearch" placeholder="(Search)">
+                    <input class="input-sm stretchToFullWidth form-control caseSelectSearch" type="text" id="caseSearch" placeholder="(Search)">
                 </form>
             </div>
             <div class="col-xs-6 removeMarginPaddingFromCol">
@@ -66,7 +50,7 @@
         <div class="row">
             <button class="btn btn-sm btn-warning stretchToFullWidth" type="button">Log Out</button>
         </div>
-    </div> <!-- container close -->
+    </div>
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
