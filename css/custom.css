@@ -13,14 +13,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
-#caseSelectionArea {
-    min-height: 60vh;
-    max-height: 60vh;
-    background-color: white;
-    overflow: auto;
-}
-
+/*login*/
 .form-signin {
     max-width: 330px;
     padding: 15px;
@@ -37,4 +30,62 @@ body {
     box-sizing: border-box;
     padding: 10px;
     font-size: 16px;
+}
+/*Case Select*/
+#caseSelectionArea {
+    min-height: 60vh;
+    max-height: 60vh;
+    background-color: white;
+    overflow: auto;
+}
+.caseSelectSearch {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/*Profile*/
+#profileContent {
+    overflow: auto;
+    height: 52vh;
+    position: relative;
+}
+#caseStatusContent h3 {
+    margin-top: 0;
+}
+#innerProfileContent {
+    position: absolute;
+    top: -23px;
+}
+#innerProfileContent h3 {
+    margin-bottom: 0;
+}
+#innerProfileContent p {
+    position: absolute;
+    top: 50px;
+}
+#profileButtonRow {
+    margin-top: 3px;
+}
+#profileLeftSide {
+    position: relative;
+}
+#caseStatusContent p {
+    position: absolute;
+    top: 215px;
+}
+/*Confirmation*/
+#rainLogo {
+    height: 30px;
+    width: 100%
+}
+#confirmationContent {
+    min-height: 40vh;
+    max-height: 40vh;
+    background-color: white;
+    overflow: auto;
+    text-align: center;
 }
