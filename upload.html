@@ -4,59 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Upload</title> 
+     <title>CaseFlow Manager</title> 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
- 
 <body> 
 <div class="container pageContent"> 
+
     <img src="img/CaseFlowManagerLogo.png" class="img-responsive center-block">
+
     <h2 class="text-center">Upload</h2>
+
     <div class="row"> 
-        <div class="col-md-6"> 
-            <form role="form"> 
-                <div class="form-group">  <label for="search">  Search  </label>  <input type="email"
-                                                                                         class="form-control"
-                                                                                         id="search"/> 
-                </div>
-            </form>
-             
-            <div class="row"> 
-                <div class="col-md-12"> 
-                    <div class="form-group">  <label for="exampleInputFile">  Browse File  </label>  <input type="file"
-                                                                                                            id="exampleInputFile"/> 
-                        <p class="help-block">  Example block-level help text here.  </p> 
-                    </div>
-                     
-                    <button type="submit" class="btn btn-default">  Submit </button>
-                     
-                </div>
-                 
+        <div class="col-xs-6"> 
+            <div class="form-group"> 
+                <label id="uploadFileLabel" for="uploadFile"> Upload File </label> 
+                <input type="file" id="uploadFile"> 
+                <p> Click the upload button and then select your file to upload.<br>Once selected, hit submit. </p> 
             </div>
+            <p>
+                Name of file to upload here
+            </p>
              
-            <button type="button" class="btn btn-block btn-warning">  Back </button>
-             
+            <button type="submit" class="btn btn-default"> Submit  File</button> 
         </div>
          
-        <div class="col-md-6"> 
-            <div class="row"> 
-                <form>
-                <div class="form-group">
-                    <input type="text" id="inputCaseID" class="form-control" placeholder="Case ID">
-                    <input type="text" id="inputName" class="form-control" placeholder="Case Name">
-                    <input type="text" id="inputCompany1" class="form-control" placeholder="Company">
-                    <input type="text" id="inputPhone" class="form-control" placeholder="Phone #">
-                    <input type="text" id="inputEmail" class="form-control" placeholder="Email">
-                    <input type="text" id="inputAddress" class="form-control" placeholder="Address">
-                    <textarea id="inputNotes" class="form-control" placeholder="Notes"></textarea>
-                </div>
-                </form>
-            <button type="button" class="btn btn-block btn-success">  Save </button>
-             
+        <div id="uploadFormArea" class="col-xs-6 removeMarginPaddingFromCol"> 
+            <form id="uploadForm">
+            <div class="form-group">
+                <label for="uploadCaseID" class="sr-only">Case ID</label>
+                <input type="text" id="uploadCaseID" name="uploadCaseID" class="form-control" placeholder="Case ID">
+                <label for="uploadName" class="sr-only">Name</label>
+                <input type="text" id="uploadName" name="uploadName" class="form-control" placeholder="Name">
+                <label for="uploadCompany" class="sr-only">Company</label>
+                <input type="text" id="uploadCompany" name="uploadCompany" class="form-control" placeholder="Company">
+                <label for="uploadPhone" class="sr-only">Phone Number</label>
+                <input type="text" id="uploadPhone" name="uploadCompany" class="form-control" placeholder="Phone #">
+                <label for="uploadEmail" class="sr-only">Email</label>
+                <input type="text" id="uploadEmail" name="uploadEmail" class="form-control" placeholder="Email">
+                <label for="uploadAddress" class="sr-only">Address</label>
+                <input type="text" id="uploadAddress" name="uploadAddress" class="form-control" placeholder="Address">
+                <label for="uploadNotes" class="sr-only">Notes</label>
+                <textarea rows="3" id="uploadNotes" name="uploadNotes" class="form-control" placeholder="Notes"></textarea>
+            </div>
+            </form> 
         </div>
          
     </div>
+    <div id="uploadButtons" class="row">
+        <div class="col-xs-6 removeMarginPaddingFromCol">
+            <button type="button" class="btn btn-block btn-warning stretchToFullWidth">  Back </button>
+        </div>
+        <div class="col-xs-6 removeMarginPaddingFromCol">
+            <button type="button" class="btn btn-block btn-success stretchToFullWidth">  Save </button>
+        </div>
     </div>
 </div>
      
