@@ -4,49 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Profile</title> 
+      <title>CaseFlow Manager</title> 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/custom.css">
-    <style>
-        .rowTest {
-            height: 100vh;
-            overflow: auto;
-        }
-        .contentTest {
-            overflow: auto;
-            height: 70vh;
-        }
-    </style>
 </head>
 <body> 
-<div class="container pageContent"> 
-    <img src="img/CaseFlowManagerLogo.png" class="img-responsive center-block">
-    <h2 class="text-center">Profile</h2>
-    <div class="row rowTest" id="caseSelectionArea"> 
-        <div class="col-xs-6 removeMarginPaddingFromCol"> 
-            <div class="row"> 
-                <img src="http://placehold.it/165x150" class="img-responsive">
-                 
+    <div class="container pageContent"> 
+
+        <img src="img/CaseFlowManagerLogo.png" class="img-responsive center-block">
+
+        <h2 class="text-center">Profile</h2>
+
+        <div class="row"> 
+
+            <div id="profileLeftSide" class="col-xs-6 removeMarginPaddingFromCol"> 
+
+                <div id="profileImage">
+                    <img src="http://placehold.it/165x150" class="img-responsive">
+                </div>
+                     
+                 <div id="caseStatusContent">
+                    <h3> Case Status </h3> 
+                    <p>
+                        Most Important Case Information<br>
+                        Second Piece of Case Info<br>
+                    </p>
+                 </div>
+
             </div>
              
-            <div class="row"> 
-                <div class="col-xs-12 removeMarginPaddingFromCol stretchToFullWidth">  <h3>  Case Status  </h3> </div> 
+            <div id="profileContent" class="col-xs-6"> 
+                <div id="innerProfileContent">
+                    <h3> Profile Data </h3> 
+                    <p>
+                        <strong>Case ID:</strong><br><span id="profileCaseID">12345</span><br>
+                        <strong>Name:</strong><br><span id="profileName">John Smith</span><br>
+                        <strong>Company:</strong><br><span id="profileCompany">Ask4Rain</span><br>
+                        <strong>Phone:</strong><br><span id="profilePhone">(123)456-7890</span><br>
+                        <strong>Email:</strong><br><span id="profileEmail">test@fakeemail.com</span><br>
+                        <strong>Address:</strong><br><span id="profileAddress">742 Fake St<br>Beverly Hills, CA 90210</span>
+                    </p>
+                </div>
             </div>
-             
-            <button type="button" class="btn btn-sm btn-warning stretchToFullWidth"> Edit </button>
-            <button type="button" class="btn btn-sm btn-warning stretchToFullWidth"> Back </button>
+        </div>
+        <div id="profileButtonRow" class="row">
+            <div class="col-xs-6 removeMarginPaddingFromCol">
+                <button type="button" class="btn btn-sm btn-warning stretchToFullWidth"> Back </button>
+            </div>
+            <div class="col-xs-6 removeMarginPaddingFromCol">
+                <button type="button" class="btn btn-sm btn-info stretchToFullWidth"> Edit </button>
+            </div>
         </div>
          
-        <div class="col-xs-6 contentTest removeMarginPaddingFromCol">  <h3 class="text-center">  Profile Data  </h3> 
-            <p class="text-center">  Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam
-                eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien,
-                sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere
-                diam ut cursus.
-            </p>
-        </div>
     </div>
-     
-</div>
   <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
 </body>
