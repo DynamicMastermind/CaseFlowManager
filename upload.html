@@ -19,14 +19,14 @@
         <div class="col-xs-6"> 
             <div class="form-group"> 
                 <label id="uploadFileLabel" for="uploadFile"> Upload File </label> 
-                <input type="file" id="uploadFile"> 
-                <p> Click the upload button and then select your file to upload.<br>Once selected, hit submit. </p> 
+                <input name="uploadFile[]" type="file" id="uploadFile" multiple> 
+                <p> Click the upload button and then select your file to upload.<br>Once selected, hit save. </p> 
             </div>
             <p>
-                Name of file to upload here
+                Name of file(s) to upload here
             </p>
              
-            <button type="submit" class="btn btn-default"> Submit  File</button> 
+            <!--<button type="submit" class="btn btn-default"> Submit  File</button> -->
         </div>
          
         <div id="uploadFormArea" class="col-xs-6 removeMarginPaddingFromCol"> 

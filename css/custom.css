@@ -53,19 +53,13 @@ body {
     height: 52vh;
     position: relative;
 }
-#caseStatusContent h3 {
-    margin-top: 0;
-}
 #innerProfileContent {
     position: absolute;
     top: -23px;
 }
-#innerProfileContent h3 {
-    margin-bottom: 0;
-}
 #innerProfileContent p {
     position: absolute;
-    top: 50px;
+    top: 20px;
 }
 #profileButtonRow {
     margin-top: 3px;
@@ -75,7 +69,7 @@ body {
 }
 #caseStatusContent p {
     position: absolute;
-    top: 215px;
+    top: 175px;
 }
 /*Upload*/
 textarea {
