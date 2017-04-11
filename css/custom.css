@@ -105,3 +105,8 @@ textarea {
     overflow: auto;
     text-align: center;
 }
+/*CAFO WELCOME*/
+.conferenceContent {
+    min-height: 60vh;
+    max-height: 60vh;
+}
