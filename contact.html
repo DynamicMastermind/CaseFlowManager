@@ -7,17 +7,6 @@
     <title>CaseFlow Manager</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/custom.css">
-    <style>
-        .contactContent {
-            min-height: 65vh;
-            max-height: 65vh;
-        }
-        #contactUsForm {
-            min-width: 75vw;
-            max-width: 75vw;
-            margin: 0 auto;
-        }
-    </style>
 </head>
 <body>
 
@@ -54,7 +43,12 @@
             </form>
         </div>
         <div class="row">
-            <button class="btn btn-sm btn-warning stretchToFullWidth" type="button">Back</button>
+            <div class="col-xs-6 removeMarginPaddingFromCol">
+                <button type="button" class="btn btn-sm btn-warning stretchToFullWidth"> Back </button>
+            </div>
+            <div class="col-xs-6 removeMarginPaddingFromCol">
+                <button type="button" class="btn btn-sm btn-success stretchToFullWidth"> Submit </button>
+            </div>
         </div>
     </div>
 <script src="js/jquery.js"></script>
