@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CaseFlow Manager</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <div class="container pageContent">
+
+        <img src="img/CaseFlowManagerLogo.png" class="img-responsive center-block">
+
+        <h2 class="text-center">
+            Contact Us
+        </h2>
+        <div class="row contactContent">
+            <p class="text-center">
+                Call: <a href="tel:+1-406-539-7586">(406) 539-7586</a><br>
+                8am-5pm Eastern Time, M-F<br>
+                <br>
+                or<br>
+                <br>
+                Send us a message:
+            </p>
+            <form id="contactUsForm">
+                <label for="name" class="sr-only">Name</label>
+                <input id="name" name="contactUsName" type="text" class="form-control" placeholder="Name">
+                <label for="emailAddress" class="sr-only">Email Address</label>
+                <input id="emailAddress" name="contactUsEmail" type="email" class="form-control" placeholder="Email Address">
+                <label for="category" class="sr-only">Category</label>
+                <select class="form-control" id="category" name="contactUsCategory">
+                    <option disabled selected>Category</option>
+                    <option value="support">Support</option>
+                    <option value="serviceInquiry">Service Inquiry</option>
+                    <option value="Referral">Referral</option>
+                </select>
+                <label for="message" class="sr-only">Message</label>
+                <textarea rows="5" id="message" name="contactUsMessage" class="form-control" placeholder="Message"></textarea>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 removeMarginPaddingFromCol">
+                <button type="button" class="btn btn-sm btn-warning stretchToFullWidth"> Back </button>
+            </div>
+            <div class="col-xs-6 removeMarginPaddingFromCol">
+                <button type="button" class="btn btn-sm btn-success stretchToFullWidth"> Submit </button>
+            </div>
+        </div>
+    </div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
