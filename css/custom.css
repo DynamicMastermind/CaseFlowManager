@@ -89,9 +89,8 @@ textarea {
     position: relative;
     bottom: 15px;
 }
-#uploadButtons {
-    position: relative;
-    bottom: 30px;
+#uploadMain {
+    margin-top: 10px;
 }
 /*Confirmation*/
 #rainLogo {
@@ -116,7 +115,7 @@ textarea {
     max-height: 70vh;
     background-color: white;
     overflow: auto;
-    text-align: center;
+    text-align: left;
 }
 /*Contact Us*/
 .contactContent {
